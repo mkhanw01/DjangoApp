@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Calulator of fibonacci terms </title>
+	</head>
+	<body>
+		<form action="" method="get" style="margin:30px;">
+			{% csrf_token %}
+			<label>Enter Number to see fibonacci</label><br><br>
+			<input type="number" name="number" value="{{number}}">
+			<input type="submit" value="Submit" />
+		</form> 
+		<div>{{output}}</div>
+	</body>
+</html>
